@@ -1,0 +1,174 @@
+/*#region HTML Elements*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+progress {
+  position: absolute;
+  text-align: center;
+  border: none;
+  width: 300px;
+  height: 200px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+  color: white;
+}
+
+progress:before {
+  content: attr(data-label);
+  font-size: 0.8em;
+  vertical-align: 0;
+  color: white;
+  /*Position text over the progress bar */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20px;
+}
+
+progress::-webkit-progress-value {
+  background-color: white;
+}
+progress::-moz-progress-bar {
+  background-color: white;
+}
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  width: 250px;
+  height: 10px;
+}
+
+progress:before {
+  content: attr(data-label);
+  font-size: 0.8em;
+  vertical-align: 0;
+
+  /*Position text over the progress bar */
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+/*#endregion*/
+
+/*#region Unity Canvas*/
+.Fullscreen,
+.unity {
+  min-height: 100%;
+  height: 100%;
+}
+
+#canvas #__ruw {
+  min-height: 100%;
+  height: 100%;
+  min-width: 100%;
+}
+/*#endregion*/
+
+/*#region HTML NavBar*/
+.NavBar {
+  overflow: auto;
+  position: fixed;
+  bottom: -15vw;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  z-index: 10;
+}
+
+.NavBarAnimation {
+  animation-fill-mode: forwards;
+  -webkit-animation-name: navbarMovement; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: navbarMovement;
+  animation-duration: 4s;
+  animation-delay: 6s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes navbarMovement {
+  from {
+    bottom: -15vw;
+  }
+  to {
+    bottom: 0vw;
+  }
+}
+
+/* Standard syntax */
+@keyframes navbarMovement {
+  from {
+    bottom: -15vw;
+  }
+  to {
+    bottom: 0vw;
+  }
+}
+
+.MenuItem {
+  display: inline-block;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  margin: 20px;
+}
+
+/* 2D TRANSITIONS */
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*#endregion */
+
+/*#region LeftBar*/
+.BarLeft {
+  position: absolute;
+  width: 35vw;
+  float: left;
+  color: whitesmoke;
+  z-index: 15;
+  padding: 30px;
+  text-align: justify;
+  white-space: pre-wrap;
+}
+
+.BarLeft > h2 {
+  margin-bottom: 15px;
+  color: wheat;
+}
+
+/*#endregion */
