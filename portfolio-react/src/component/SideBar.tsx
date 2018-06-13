@@ -1,5 +1,4 @@
 import * as React from "react";
-import YouTube from "react-youtube";
 import { IMenuItem } from "../interfaces";
 
 interface IProps {
@@ -23,9 +22,7 @@ class SideBar extends React.Component<IProps, any> {
         <div className="Description">
           {page.description !== undefined && <p>{page.description}</p>}
         </div>
-        {page.youtube && (
-          <YouTube videoId={page.youtube} opts={{ width: "340" }} />
-        )}
+        
       </div>
     );
   }
