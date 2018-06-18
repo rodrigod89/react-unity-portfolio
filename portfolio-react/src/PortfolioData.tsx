@@ -54,9 +54,6 @@ const data: IPortfolio = {
       youtube: "mosVw3X4qYM",
       logo_image: require("./img/portfolio/bumpbumpbump.png"),
       images: [
-        require("./img/portfolio/BBB/bbb_01.jpg"),
-        require("./img/portfolio/BBB/bbb_02.jpg"),
-        require("./img/portfolio/BBB/bbb_03.jpg")
       ],
       component: "BBBComponent"
     },
@@ -64,7 +61,7 @@ const data: IPortfolio = {
       name: "Gamestrap",
       title: "Gamestrap",
       subtitle: "Unity Asset Store Publisher",
-      description: "Unity Assets that help the users with their UI and camera workflows.",
+      description: "Unity packs currently being sold in the Unity Asset Store that helps game developers design user interfaces by providing them with the resources and tools to make something professional in less time.",
       company: { name: `Gamestrap`, url: ``},
       teamSize: 2,
       role: "Co-creator",
@@ -76,9 +73,25 @@ const data: IPortfolio = {
       youtube: "mosVw3X4qYM",
       logo_image: require("./img/portfolio/bumpbumpbump.png"),
       images: [
-        require("./img/portfolio/BBB/bbb_01.jpg"),
-        require("./img/portfolio/BBB/bbb_02.jpg"),
-        require("./img/portfolio/BBB/bbb_03.jpg")
+      ],
+      component: "GamestrapComponent"
+    },
+    {
+      name: "Yuvine VR",
+      title: "Yuvine VR",
+      subtitle: "Product Virtual Presentations",
+      description: "A start-up that focuses on visual brilliance in 3D through virtual experiences. The main drive of the company is to create intuitive and outstanding experiences from product presentations to virtual training for web, desktop and mobile platforms.",
+      company: { name: `Yuvine VR`, url: ``},
+      teamSize: 3,
+      role: "Lead Developer",
+      details: [
+        "Implemented all of the .",
+        "Created the videos and tutorials.",
+        "Gamestrap UI has around 150 reviews in 5 stars"
+      ],
+      youtube: "mosVw3X4qYM",
+      logo_image: require("./img/portfolio/bumpbumpbump.png"),
+      images: [
       ],
       component: "GamestrapComponent"
     },
